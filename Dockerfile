@@ -1,11 +1,12 @@
 ARG ALPINE_VERSION=3.15
-ARG AWS_CDK_VERSION=1.134.0
+ARG AWS_CDK_VERSION=2.27.0
 FROM alpine:${ALPINE_VERSION}
 
 RUN apk -v --no-cache --update add \
         nodejs \
         npm \
         python3 \
+        py-pip \
         ca-certificates \
         groff \
         less \
